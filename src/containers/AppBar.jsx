@@ -14,7 +14,7 @@ import { useAuth } from "../hooks/useAuth";
 
 const pages = [
   { pageName: "Home", link: "/", protected: null },
-  { pageName: "Sign In", link: "/auth/sign-in", protected: false },
+  { pageName: "Log In", link: "/auth/sign-in", protected: false },
   { pageName: "Sign Up", link: "/auth/sign-up", protected: false },
 ];
 

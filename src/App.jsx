@@ -4,10 +4,15 @@ import supabaseLogo from "/supabase.svg";
 import Todos from "./components/Todos";
 import vercelLogo from "/vercel.svg";
 import viteLogo from "/vite.svg";
-
+import LocalBusinessDirectoryLogo from "/images/LocalBusinessDirectoryLogo.png";
 function App() {
   return (
     <>
+     <img
+        src={LocalBusinessDirectoryLogo}
+        alt="Local Business Directory Logo"
+        style={{ height: "80px", marginBottom: "20px" }} // Adjust styling as needed
+      />
       <h1>React + Vite + Supabase + Vercel</h1>
 
       <div>

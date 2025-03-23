@@ -4,11 +4,12 @@ import toast from "react-hot-toast";
 
 import AccountForm from "../../containers/AccountForm";
 import supabase from "../../utils/supabase";
+import { Login } from "@mui/icons-material";
 
-const SignIn = () => {
+const LoginForm = () => {
   const navigate = useNavigate();
 
-  const signIn = async (email, password) => {
+  const handleLogin = async (email, password) => {
     const result = await supabase.auth.signInWithPassword({
       email,
       password,
@@ -24,10 +25,10 @@ const SignIn = () => {
 
   return (
     <>
-      <h1>Sign In</h1>
-      <AccountForm onSubmit={signIn} />
+      <h1>Log in</h1>
+      <AccountForm onSubmit={handleLogin} />
     </>
   );
 };
 
-export default memo(SignIn);
+export default memo(LoginForm);
