@@ -28,6 +28,12 @@
   vertical-align: middle;
   padding: 0;
 }
+.logo.LocalBusiness{
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 @keyframes logo-spin {
   from {
